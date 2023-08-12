@@ -46,15 +46,15 @@ void mergeSort(std::vector<int>& arr, int left, int right) {
 }
 
 int main() {
-    std::vector<int> arr = {65, 11, 14, 5, 93, 38};
-    int size = arr.size();
+    std::vector<int> vec = {65, 11, 14, 5, 93, 38};
+    int size = vec.size();
     std::cout << "Original array: ";
-    for (int num : arr)
+    for (int num : vec)
         std::cout << num << " ";
     std::cout << std::endl;
-    mergeSort(arr, 0, size - 1);
+    mergeSort(vec, 0, size - 1);
     std::cout << "Sorted array: ";
-    for (int num : arr)
+    for (int num : vec)
         std::cout << num << " ";
     std::cout << std::endl;
 }
